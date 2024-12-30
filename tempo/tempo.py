@@ -12,15 +12,6 @@ CACHE_FILE = Path("/tmp/tempo_accounts_cache.json")
 WBSO_FIELD_ID = "customfield_11510"  # Replace with the actual custom field ID for WBSO Topic
 
 
-auth_string = f"{JIRA_EMAIL}:{JIRA_API_TOKEN}"
-auth_header = base64.b64encode(auth_string.encode("utf-8")).decode("utf-8")
-authorization_header = f"Basic {auth_header}"
-
-headers = {
-    "Authorization": authorization_header,
-    "Content-Type": "application/json"
-}
-
 
 def fetch_tempo_accounts():
     if CACHE_FILE.exists() and CACHE_FILE.stat().st_size > 0:
@@ -28,6 +19,8 @@ def fetch_tempo_accounts():
             return json.load(f)
 
     url = f"{TEMPO_API_URL}/accounts"
+    print(f"Fetching Tempo accounts from {url}")
+    headers = {"Authorization": f"Bearer {TEMPO_TOKEN}", "Content-Type": "application/json"}
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     accounts = response.json().get("results", [])
@@ -40,6 +33,16 @@ def find_account_key_by_id(accounts, account_id):
 
 def fetch_issue(issue_key):
     url = f"{JIRA_API_URL}/{issue_key}"
+
+    auth_string = f"{JIRA_EMAIL}:{JIRA_API_TOKEN}"
+    auth_header = base64.b64encode(auth_string.encode("utf-8")).decode("utf-8")
+    authorization_header = f"Basic {auth_header}"
+
+    headers = {
+        "Authorization": authorization_header,
+        "Content-Type": "application/json"
+    }
+
 
     response = requests.get(url, headers=headers)
     response.raise_for_status()
