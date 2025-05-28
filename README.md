@@ -1,5 +1,7 @@
-# ![ChatGPT Image May 28, 2025, 10_36_21 AM](https://github.com/user-attachments/assets/07ab4b47-cfb8-4237-8055-783a5326f710) Tempo Filler Script
-
+<div style="display: flex; align-items: center; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/07ab4b47-cfb8-4237-8055-783a5326f710" alt="Tempo Filler Logo" width="80" />
+  <h1>Tempo Filler Script</h1>
+</div>
 
 
 
