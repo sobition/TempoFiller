@@ -1,10 +1,9 @@
 <div style="display: flex; align-items: center; gap: 12px;" dir="auto">
-  <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/33763156/448293130-07ab4b47-cfb8-4237-8055-783a5326f710.png?...">
-    <img src="https://private-user-images.githubusercontent.com/33763156/448293130-07ab4b47-cfb8-4237-8055-783a5326f710.png?..." alt="Tempo Filler Logo" width="80" style="max-width: 100%;" />
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ea902e17-378f-454b-bc08-72aa23e921e6">
+    <img src="https://github.com/user-attachments/assets/ea902e17-378f-454b-bc08-72aa23e921e6" alt="Tempo Filler Logo" width="80" style="max-width: 100%;" />
   </a>
   <h1 style="margin: 0;">Tempo Filler Script</h1>
 </div>
-
 
 This script allows you to log work hours to Jira issues using the Tempo API. It supports fetching account details and reporting time directly from the terminal.
 
