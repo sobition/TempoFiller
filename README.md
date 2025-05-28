@@ -1,7 +1,5 @@
 <div style="display: flex; align-items: center; gap: 12px;" dir="auto">
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ea902e17-378f-454b-bc08-72aa23e921e6">
-    <img src="https://github.com/user-attachments/assets/ea902e17-378f-454b-bc08-72aa23e921e6" alt="Tempo Filler Logo" width="80" style="max-width: 100%;" />
-  </a>
+  <img src="https://github.com/user-attachments/assets/ea902e17-378f-454b-bc08-72aa23e921e6" alt="Tempo Filler Logo" width="80" style="max-width: 100%;" />
   <h1 style="margin: 0;">Tempo Filler Script</h1>
 </div>
 
