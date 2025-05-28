@@ -1,5 +1,8 @@
 # Tempo Filler Script
 
+![ChatGPT Image May 28, 2025, 10_36_21 AM](https://github.com/user-attachments/assets/07ab4b47-cfb8-4237-8055-783a5326f710)
+
+
 This script allows you to log work hours to Jira issues using the Tempo API. It supports fetching account details and reporting time directly from the terminal.
 
 ---
